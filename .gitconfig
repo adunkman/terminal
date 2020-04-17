@@ -1,0 +1,25 @@
+[user]
+  name = Andrew Dunkman
+  email = andrew.dunkman@gsa.gov
+  signingkey = 3F6677AF2D5EA76B
+[github]
+  user = adunkman
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+  ui = true
+[help]
+  autocorrect = -1
+[push]
+  default = current
+[core]
+  excludesfile = ~/.gitignore
+[merge]
+  defaultToUpstream = true
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[commit]
+  gpgsign = true
+[pager]
+  branch = false
